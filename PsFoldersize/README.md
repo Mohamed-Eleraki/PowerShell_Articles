@@ -11,6 +11,7 @@ i'm using Ubunto destrubution, So will going through deb packages, however if yo
 
 
  - Download the package "powershell_7.3.4-1.deb_amd64.deb"
+   - https://github.com/PowerShell/PowerShell/releases/tag/v7.3.4
  - set execution permission and Install the package
 
 	```bash
