@@ -24,8 +24,9 @@ i'm using Ubunto destrubution, So will going through deb packages, however if yo
  pwsh
  ```
 
-	```bash
+ ```bash
  $PSVersionTable
+
  ```
 
 - The output should be like that:
@@ -66,13 +67,16 @@ A module is a package that contains PowerShell members, such as [cmdlets](https:
  get-help Get-FolderSize -Detailed
  ```
 
-  - The tool have a powerfull cabapilities, Let's dicover the command members
+- The tool have a powerfull cabapilities, Let's dicover the command members
+
   ```bash
   Get-FolderSize | gm
   ```
-  - gm = get-member, any command is an object, and get-member Gets the properties and methods of objects; these methods and properties can be use in advanced tasks
 
-  - The out-put
+- gm = get-member, any command is an object, and get-member Gets the properties and methods of objects; these methods and properties can be use in advanced tasks
+
+- The out-put
+
   ```bash
 
       TypeName: PS.Folder.List.Result
@@ -92,6 +96,7 @@ A module is a package that contains PowerShell members, such as [cmdlets](https:
   SizeMB      NoteProperty double SizeMB=369.18
 
   ```
-    - These member working as Result
+
+- These member working as Result
 
 </details>
