@@ -2,7 +2,7 @@
 
 
 As cleaify by the author **Mike Roberts** "This module enables you to gather folder size information, and output the results easily in various ways."
-## install PowerShell core
+## Install PowerShell core
 
 i'm using Ubunto destrubution, So will going through deb packages, however if you're using another dest just use The proper package manager.
 
@@ -45,5 +45,17 @@ i'm using Ubunto destrubution, So will going through deb packages, however if yo
 	```
 
 
+
+</details>
+
+
+## Install PsFoldersize module
+
+A module is a package that contains PowerShell members, such as [cmdlets](https://learn.microsoft.com/en-us/powershell/scripting/developer/cmdlet/cmdlet-overview?view=powershell-7.3), functions, variables, and aliases; in another way Modules is packages contains list of commands, function, etc...
+
+<details>
+<summary>Install PsFoldersize module</summary>
+
+ - Print-out the existing modules
 
 </details>
