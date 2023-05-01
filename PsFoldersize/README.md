@@ -83,7 +83,7 @@ get-help Get-FolderSize
 - Any command is an object, and get-member Gets the properties and methods of objects; these methods and properties can be use in advanced tasks. Coming up!
 
   ```
-  PS /home/mohamed> Get-FolderSize | gm
+  PS /home/PowerShellUser> Get-FolderSize | gm
 
    TypeName: PS.Folder.List.Result
 
@@ -94,7 +94,7 @@ get-help Get-FolderSize
   GetType     Method       type GetType()
   ToString    Method       string ToString()
   FolderName  NoteProperty System.String FolderName=.cache
-  FullPath    NoteProperty string FullPath=/home/mohamed/.cache
+  FullPath    NoteProperty string FullPath=/home/PowerShellUser/.cache
   HostName    NoteProperty string HostName=ThinkPad
   SizeBytes   NoteProperty double SizeBytes=435597898
   SizeGB      NoteProperty double SizeGB=0.41
@@ -108,7 +108,7 @@ get-help Get-FolderSize
   - ***MemberType***:
     - ***method***: Things I can do.
     - ***NoteProperties***: generic properties.
-    - ***properties***: >> Things I have, Things that describe me.
+    - ***properties***: >> Things I have, Things that describe me (e.g. my skin color, my eyes color, etc...)
 
 - **Exmples**:
 
@@ -118,7 +118,7 @@ Get-FolderSize
 
 FolderName                     SizeMB       SizeGB       FullPath
 ----------                     ------       ------       --------
-Downloads                      152.86       0.15         /home/mohamed/Downloads
+Downloads                      152.86       0.15         /home/PowerShellUser/Downloads
 
 ```
 
@@ -151,6 +151,30 @@ Get-FolderSize | select -Property FullPath, SizeGB
 FullPath                                SizeGB
 --------                                ------
 /home/PowerShellUser/Downloads           0.150
+
+```
+
+```bash
+# Filtter the out-put with sizeGB that equal 0.15  
+Get-FolderSize | Where-Object SizeGB -eq 0.15
+
+FolderName                     SizeMB       SizeGB       FullPath
+----------                     ------       ------       --------
+Downloads                      152.86       0.15         /home/PowerShellUser/Downloads
+
+```
+
+- [about_Comparison_Operators](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_comparison_operators?view=powershell-7.2)
+
+```bash
+# Filtter teh out-put with sizeGB that match "0.anySize"
+Get-FolderSize | Where-Object SizeGB -match "0.1*"
+
+FolderName                     SizeMB       SizeGB       FullPath
+----------                     ------       ------       --------
+
+Downloads                      152.86       0.15         /home/PowerShellUser/Downloads
+.config                        60.91        0.06         /home/PowerShellUser/.config
 
 ```
 
