@@ -53,7 +53,7 @@ i'm using Ubunto destrubution, So will going through deb packages, however if yo
 A module is a package that contains PowerShell members, such as [cmdlets](https://learn.microsoft.com/en-us/powershell/scripting/developer/cmdlet/cmdlet-overview?view=powershell-7.3), [functions](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_functions?view=powershell-7.3), [variables](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_variables?view=powershell-7.3), and [aliases](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_aliases?view=powershell-7.3); in another way Modules is packages contains list of commands, function, etc...
 
 <details>
-<a><summary><b>Install PsFoldersize module</b></summary></a>
+<summary><b>Install PsFoldersize module</b></summary>
 
 - Install PsFoldersize
 
@@ -101,7 +101,7 @@ get-help Get-FolderSize
   SizeKB      NoteProperty double SizeKB=425388.57
   SizeMB      NoteProperty double SizeMB=415.42 ```
 
-- Now Let's discover The out-put:
+- **Now Let's discover The out-put**:
   - ***TypeName***: means that the listed members provide more result capabilites, More explination coming up!
     - ***Another example***: ```get-process``` what out-put do you expect from this command!? for sure ***processes***, So the members of```get-process``` command provide more capabilites at the process out-put.
 
@@ -109,5 +109,49 @@ get-help Get-FolderSize
     - ***method***: Things I can do.
     - ***NoteProperties***: generic properties.
     - ***properties***: >> Things I have, Things that describe me.
+
+- **Exmples**:
+
+```bash
+cd ~
+Get-FolderSize     
+
+FolderName                     SizeMB       SizeGB       FullPath
+----------                     ------       ------       --------
+Downloads                      152.86       0.15         /home/mohamed/Downloads
+
+```
+
+```bash
+# Print out folder name only
+Get-FolderSize | select -Property FolderName
+
+FolderName
+----------
+
+Downloads
+
+```
+
+```bash
+# Print out folder name and size
+Get-FolderSize | select -Property FolderName, SizeGB
+
+FolderName   SizeGB
+----------   ------
+
+Downloads     0.150
+
+```
+
+```bash
+# Print out fullpath and size
+Get-FolderSize | select -Property FullPath, SizeGB  
+
+FullPath                                SizeGB
+--------                                ------
+/home/PowerShellUser/Downloads           0.150
+
+```
 
 </details>
