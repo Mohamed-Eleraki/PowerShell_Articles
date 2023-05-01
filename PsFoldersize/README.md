@@ -1,10 +1,10 @@
 # PsFoldersize Module
 
-As cleaify by the author **Mike Roberts** "This module enables you to gather folder size information, and output the results easily in various ways."
+As clear by the author **Mike Roberts** "This module enables you to gather folder size information, and output the results easily in various ways."
 
 ## Install PowerShell core
 
-i'm using Ubunto destrubution, So will going through deb packages, however if you're using another dest just use The proper package manager.
+I'm using Ubuntu distribution, So will go through deb packages, however, if you're using another dest just use The proper package manager.
 
 <details>
 <summary>Install PowerShell core on Linux </summary>
@@ -18,7 +18,7 @@ i'm using Ubunto destrubution, So will going through deb packages, however if yo
  sudo dpkg -i powershell_7.3.4-1.deb_amd64.deb 
  ```
 
-- Start and print out Powershell version
+- Start and print out the Powershell version
 
  ```bash
  pwsh
