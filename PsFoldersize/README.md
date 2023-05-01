@@ -102,12 +102,12 @@ get-help Get-FolderSize
   SizeMB      NoteProperty double SizeMB=415.42 ```
 
 - Now Let's discover The out-put:
-  - ***TypeName***: means that the listed members provide more result capabilites.
+  - ***TypeName***: means that the listed members provide more result capabilites, More explination coming up!
     - ***Another example***: ```get-process``` what out-put do you expect from this command!? for sure ***processes***, So the members of```get-process``` command provide more capabilites at the process out-put.
 
-</details>
+  - ***MemberType***:
+    - ***method***: Things I can do.
+    - ***NoteProperties***: generic properties.
+    - ***properties***: >> Things I have, Things that describe me.
 
-- These member working as Result
-- properties >> things I have Things that describe me
-- methoods thing I can do
-- TypeName: PS.Folder.List.Result what is the object send me is send me a result, take get-process for example it's send me a process.
+</details>
