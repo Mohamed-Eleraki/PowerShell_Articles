@@ -95,7 +95,7 @@ get-help Get-FolderSize
   ToString    Method       string ToString()
   FolderName  NoteProperty System.String FolderName=.cache
   FullPath    NoteProperty string FullPath=/home/PowerShellUser/.cache
-  HostName    NoteProperty string HostName=ThinkPad
+  HostName    NoteProperty string HostName=
   SizeBytes   NoteProperty double SizeBytes=435597898
   SizeGB      NoteProperty double SizeGB=0.41
   SizeKB      NoteProperty double SizeKB=425388.57
