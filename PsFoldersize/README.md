@@ -50,7 +50,7 @@ I'm using Ubuntu distribution, So will go through deb packages, however, if you'
 
 ## PsFoldersize module
 
-A module is a package that contains PowerShell members, such as [cmdlets](https://learn.microsoft.com/en-us/powershell/scripting/developer/cmdlet/cmdlet-overview?view=powershell-7.3), [functions](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_functions?view=powershell-7.3), [variables](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_variables?view=powershell-7.3), and [aliases](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_aliases?view=powershell-7.3); in another way Modules is packages contains list of commands, function, etc...
+A module is a package that contains PowerShell members, such as [cmdlets](https://learn.microsoft.com/en-us/powershell/scripting/developer/cmdlet/cmdlet-overview?view=powershell-7.3), [functions](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_functions?view=powershell-7.3), [variables](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_variables?view=powershell-7.3), and [aliases](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_aliases?view=powershell-7.3); in another way Modules is packages contains a list of commands, functions, etc...
 
 <details>
 <summary><b>Install PsFoldersize module</b></summary>
@@ -68,19 +68,19 @@ get-help Get-FolderSize
 </details>
 
 <details>
-<summary><b>Discovering The Command!</b></summary>
+<summary><b>Command discovery</b></summary>
 
  ```bash
  get-help Get-FolderSize -Detailed
  ```
 
-- The tool have a powerfull cabapilities, Let's dicover more with ```get-member```
+- The tool has powerful capabilities, Let's discover more with  ```get-member```
 
   ```bash
   Get-FolderSize | gm
   ```
 
-- Any command is an object, and get-member Gets the properties and methods of objects; these methods and properties can be use in advanced tasks. Coming up!
+- Any command is an object, and get-member Gets the properties and methods of objects; these methods and properties can be used in advanced tasks. Coming up!
 
   ```
   PS /home/PowerShellUser> Get-FolderSize | gm
@@ -102,7 +102,7 @@ get-help Get-FolderSize
   SizeMB      NoteProperty double SizeMB=415.42 ```
 
 - **Now Let's discover The out-put**:
-  - ***TypeName***: means that the listed members provide more result capabilites, More explination coming up!
+  - ***TypeName***: means that the listed members provide more result capabilities, More explanation coming up!
     - ***Another example***: ```get-process``` what out-put do you expect from this command!? for sure ***processes***, So the members of```get-process``` command provide more capabilites at the process out-put.
 
   - ***MemberType***:
@@ -145,7 +145,7 @@ Downloads     0.150
 ```
 
 ```bash
-# Print out fullpath and size
+# Print out full path and size
 Get-FolderSize | select -Property FullPath, SizeGB  
 
 FullPath                                SizeGB
@@ -179,7 +179,7 @@ Downloads                      152.86       0.15         /home/PowerShellUser/Do
 - [MATCH about_Comparison_Operators](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_comparison_operators?view=powershell-7.2)
 
 ```bash
-# Filter the out-put with size ceriateria and select only full path out-put, and set in a variable, Then you can use this variable in copy the items, looping, ifcondetions, etc
+# Filter the out-put with size criteria and select only full path out-put, and set it in a variable, Then you can use this variable to copy the items, looping, ifcondetions, etc
 $getFolderSize = Get-FolderSize | Where-Object SizeGB -eq 0.15 | select -Property fullpath
 ```
 
@@ -208,7 +208,7 @@ $getFolderSize | Format-Table -AutoSize
 ```
 
 ```bash
-# define a variable called $getFolderSize that have folder size data and save the value in ~/Desktop path with csv extention
+# define a variable called $getFolderSize that has folder size data and save the value in ~/Desktop path with csv extension
 $getFolderSize = Get-FolderSize -Output csv -OutputPath ~\Desktop
 $getFolderSize
 
@@ -220,7 +220,7 @@ Get-FolderSize | Sort-Object SizeBytes -Descending
 ```
 
 ```bash
-# Use Omitfolders option to execlued pictures folder out-put
+# Use Omitfolders option to exclude pictures folder out-put
 Get-FolderSize -OmitFolders ./Pictures/
 ```
 
