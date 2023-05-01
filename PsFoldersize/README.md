@@ -48,7 +48,7 @@ i'm using Ubunto destrubution, So will going through deb packages, however if yo
 
 </details>
 
-## Install PsFoldersize module
+## PsFoldersize module
 
 A module is a package that contains PowerShell members, such as [cmdlets](https://learn.microsoft.com/en-us/powershell/scripting/developer/cmdlet/cmdlet-overview?view=powershell-7.3), [functions](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_functions?view=powershell-7.3), [variables](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_variables?view=powershell-7.3), and [aliases](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_aliases?view=powershell-7.3); in another way Modules is packages contains list of commands, function, etc...
 
@@ -74,7 +74,7 @@ get-help Get-FolderSize
  get-help Get-FolderSize -Detailed
  ```
 
-- The tool have a powerfull cabapilities, Let's dicover more with ```bash get-members```
+- The tool have a powerfull cabapilities, Let's dicover more with ```get-members```
 
 </details>
 
