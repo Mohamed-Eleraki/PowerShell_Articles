@@ -165,7 +165,7 @@ Downloads                      152.86       0.15         /home/PowerShellUser/Do
 ```
 
 ```bash
-# Filtter teh out-put with sizeGB that match "0.anySize"
+# Filtter the out-put with sizeGB that match "0.anySize"
 Get-FolderSize | Where-Object SizeGB -match "0.1*"
 
 FolderName                     SizeMB       SizeGB       FullPath
@@ -177,5 +177,46 @@ Downloads                      152.86       0.15         /home/PowerShellUser/Do
 ```
 
 - [MATCH about_Comparison_Operators](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_comparison_operators?view=powershell-7.2)
+
+**get-help Examples**:
+
+```bash
+# The default format out-put is Table however, there's a list as well  
+# select the format output as "table" with "autosize" option to ignore hidden values 
+Get-FolderSize | Format-Table -AutoSize
+```
+
+```bash
+# specify a path
+Get-FolderSize -BasePath 'C:\Program Files'
+```
+
+```bash
+# Spicify a path and the exact folder name
+Get-FolderSize -BasePath 'C:\Program Files' -FolderName IIS
+```
+
+```bash
+# define a variable called $getFolderSize have folder size data, And Reuse the variable with table format 
+$getFolderSize = Get-FolderSize 
+$getFolderSize | Format-Table -AutoSize
+```
+
+```bash
+# define a variable called $getFolderSize that have folder size data and save the value in ~/Desktop path with csv extention
+$getFolderSize = Get-FolderSize -Output csv -OutputPath ~\Desktop
+$getFolderSize
+
+```
+
+```bash
+# sort by size descending
+Get-FolderSize | Sort-Object SizeBytes -Descending
+```
+
+```bash
+# Use Omitfolders option to execlued pictures folder out-put
+Get-FolderSize -OmitFolders ./Pictures/
+```
 
 </details>
