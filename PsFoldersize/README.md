@@ -74,21 +74,16 @@ get-help Get-FolderSize
  get-help Get-FolderSize -Detailed
  ```
 
-- The tool have a powerfull cabapilities, Let's dicover more with ```get-members```
-
-</details>
+- The tool have a powerfull cabapilities, Let's dicover more with ```get-member```
 
   ```bash
   Get-FolderSize | gm
   ```
 
-- gm = get-member, any command is an object, and get-member Gets the properties and methods of objects; these methods and properties can be use in advanced tasks
+  ```
+  PS /home/mohamed> Get-FolderSize | gm
 
-- The out-put
-
-  ```bash
-
-      TypeName: PS.Folder.List.Result
+   TypeName: PS.Folder.List.Result
 
   Name        MemberType   Definition
   ----        ----------   ----------
@@ -96,15 +91,17 @@ get-help Get-FolderSize
   GetHashCode Method       int GetHashCode()
   GetType     Method       type GetType()
   ToString    Method       string ToString()
-  FolderName  NoteProperty System.String FolderName=.thunderbird
-  FullPath    NoteProperty string FullPath=/home/mohamed/.thunderbird
+  FolderName  NoteProperty System.String FolderName=.cache
+  FullPath    NoteProperty string FullPath=/home/mohamed/.cache
   HostName    NoteProperty string HostName=ThinkPad
-  SizeBytes   NoteProperty double SizeBytes=387109585
-  SizeGB      NoteProperty double SizeGB=0.36
-  SizeKB      NoteProperty double SizeKB=378036.7
-  SizeMB      NoteProperty double SizeMB=369.18
+  SizeBytes   NoteProperty double SizeBytes=435597898
+  SizeGB      NoteProperty double SizeGB=0.41
+  SizeKB      NoteProperty double SizeKB=425388.57
+  SizeMB      NoteProperty double SizeMB=415.42 ```
 
-  ```
+- Any command is an object, and get-member Gets the properties and methods of objects; these methods and properties can be use in advanced tasks.
+
+</details>
 
 - These member working as Result
 - properties >> things I have Things that describe me
