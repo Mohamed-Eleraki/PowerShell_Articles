@@ -68,7 +68,7 @@ get-help Get-FolderSize
 </details>
 
 <details>
-<summary>Discover tool usage</summary>
+<summary>Discovering The Command!</summary>
 
  ```bash
  get-help Get-FolderSize -Detailed
@@ -79,6 +79,8 @@ get-help Get-FolderSize
   ```bash
   Get-FolderSize | gm
   ```
+
+- Any command is an object, and get-member Gets the properties and methods of objects; these methods and properties can be use in advanced tasks. Coming up!
 
   ```
   PS /home/mohamed> Get-FolderSize | gm
@@ -99,7 +101,8 @@ get-help Get-FolderSize
   SizeKB      NoteProperty double SizeKB=425388.57
   SizeMB      NoteProperty double SizeMB=415.42 ```
 
-- Any command is an object, and get-member Gets the properties and methods of objects; these methods and properties can be use in advanced tasks.
+- Now Let's discover The out-put:
+  - ***TypeName***: means that the listed members provide more result capabilites.
 
 </details>
 
