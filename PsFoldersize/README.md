@@ -176,6 +176,6 @@ Downloads                      152.86       0.15         /home/PowerShellUser/Do
 
 ```
 
-    -  [MATCH](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_comparison_operators?view=powershell-7.2)
+- [MATCH about_Comparison_Operators](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_comparison_operators?view=powershell-7.2)
 
 </details>
