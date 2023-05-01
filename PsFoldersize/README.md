@@ -61,13 +61,22 @@ A module is a package that contains PowerShell members, such as [cmdlets](https:
  Install-Module -Name PSFolderSize 
  ```
 
-- Discover tool usage
+```bash
+get-help Get-FolderSize
+```
+
+</details>
+
+<details>
+<summary>Discover tool usage</summary>
 
  ```bash
  get-help Get-FolderSize -Detailed
  ```
 
-- The tool have a powerfull cabapilities, Let's dicover the command members
+- The tool have a powerfull cabapilities, Let's dicover more with ```bash get-members```
+
+</details>
 
   ```bash
   Get-FolderSize | gm
@@ -101,5 +110,3 @@ A module is a package that contains PowerShell members, such as [cmdlets](https:
 - properties >> things I have Things that describe me
 - methoods thing I can do
 - TypeName: PS.Folder.List.Result what is the object send me is send me a result, take get-process for example it's send me a process.
-
-</details>
