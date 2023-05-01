@@ -68,7 +68,7 @@ get-help Get-FolderSize
 </details>
 
 <details>
-<summary>***Discovering The Command!***</summary>
+<summary><b>Discovering The Command!</b></summary>
 
  ```bash
  get-help Get-FolderSize -Detailed
