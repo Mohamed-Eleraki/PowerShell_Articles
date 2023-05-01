@@ -103,6 +103,7 @@ get-help Get-FolderSize
 
 - Now Let's discover The out-put:
   - ***TypeName***: means that the listed members provide more result capabilites.
+    - ***Another example***: ```get-process`` what out-put do you expect from this command!? for sure ***processes***, So the members of```get-process``` command provide more capabilites at the process out-put.
 
 </details>
 
