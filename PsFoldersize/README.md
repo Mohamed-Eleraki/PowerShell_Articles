@@ -1,6 +1,7 @@
 # PsFoldersize Module
 
 As clear by the author **Mike Roberts** "This module enables you to gather folder size information, and output the results easily in various ways."
+REF: [PsGallery](https://www.powershellgallery.com/packages/PSFolderSize/1.7.1)
 
 ## Install PowerShell core
 
