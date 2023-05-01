@@ -98,5 +98,8 @@ A module is a package that contains PowerShell members, such as [cmdlets](https:
   ```
 
 - These member working as Result
+- properties >> things I have Things that describe me
+- methoods thing I can do
+- TypeName: PS.Folder.List.Result what is the object send me is send me a result, take get-process for example it's send me a process.
 
 </details>
