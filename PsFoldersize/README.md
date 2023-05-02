@@ -177,7 +177,7 @@ Downloads                      152.86       0.15         /home/PowerShellUser/Do
 - [MATCH about_Comparison_Operators](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_comparison_operators?view=powershell-7.2)
 
 ```bash
-# Filter the out-put with size criteria and select only full path out-put, and set it in a variable, Then you can use this variable to copy the items, looping, ifcondetions, etc
+# Filter the out-put with size criteria and select only full path out-put, and set it in a variable, Then you can use this variable to copy the items, looping, ifconditions, etc
 $getFolderSize = Get-FolderSize | Where-Object SizeGB -eq 0.15 | select -Property fullpath
 ```
 
