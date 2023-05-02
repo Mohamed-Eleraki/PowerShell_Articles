@@ -106,7 +106,7 @@ get-help Get-FolderSize
 - ***MemberType***:
   - ***method***: Things I can do.
   - ***NoteProperties***: generic properties.
-  - ***properties***: >> Things I have, Things that describe me (e.g. my skin color, my eyes color, etc...)
+  - ***properties***: >> Properties that the command has, Properties that describe it, The command has a folderName, fullpath property, etc.
 
 - **Exmples**:
 
