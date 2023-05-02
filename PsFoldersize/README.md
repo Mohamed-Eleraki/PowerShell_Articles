@@ -4,6 +4,8 @@ As clear by the author **Mike Roberts** [PsGallery](https://www.powershellgaller
 
 ## Install PowerShell core
 
+.
+
 I'm using Ubuntu distribution, So will go through deb packages, however, if you're using another dist just use The proper package manager.
 
 <details>
