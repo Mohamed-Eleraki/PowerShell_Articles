@@ -56,8 +56,6 @@ A module is a package that contains PowerShell members, such as [cmdlets](https:
 <details>
 <summary><b>Install PsFoldersize module</b></summary>
 
-- Install PsFoldersize
-
  ```bash
  Install-Module -Name PSFolderSize 
  ```
