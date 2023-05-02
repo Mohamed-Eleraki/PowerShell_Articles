@@ -184,7 +184,7 @@ $getFolderSize = Get-FolderSize | Where-Object SizeGB -eq 0.15 | select -Propert
 **get-help Examples**:
 
 ```bash
-# The default format out-put is Table however, there's a list as well  
+# The default format out-put is Table however, there's a list as well "format-list"
 # select the format output as "table" with "autosize" option to ignore hidden values 
 Get-FolderSize | Format-Table -AutoSize
 ```
