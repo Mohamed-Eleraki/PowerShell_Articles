@@ -7,7 +7,7 @@ As clear by the author **Mike Roberts** [PsGallery](https://www.powershellgaller
 I'm using Ubuntu distribution, So will go through deb packages, however, if you're using another dist just use The proper package manager.
 
 <details>
-<summary>Install PowerShell core on Linux </summary>
+<summary><b>Install PowerShell core on Linux</b></summary>
 
 - Download the package "powershell_7.3.4-1.deb_amd64.deb"
   - <https://github.com/PowerShell/PowerShell/releases/tag/v7.3.4>
