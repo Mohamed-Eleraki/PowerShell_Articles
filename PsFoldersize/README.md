@@ -100,14 +100,13 @@ get-help Get-FolderSize
   SizeKB      NoteProperty double SizeKB=425388.57
   SizeMB      NoteProperty double SizeMB=415.42 ```
 
-- **Now Let's discover The out-put**:
-  - ***TypeName***: means that the listed members provide more result capabilities, More explanation coming up!
-    - ***Another example***: ```get-process``` what out-put do you expect from this command!? for sure ***processes***, So the members of```get-process``` command provide more capabilites at the process out-put.
+- ***TypeName***: means that the listed members provide more result capabilities, More explanation coming up!
+  - ***Another example***: ```get-process``` what out-put do you expect from this command!? for sure ***processes***, So the members of```get-process``` command provide more capabilites at the process out-put.
 
-  - ***MemberType***:
-    - ***method***: Things I can do.
-    - ***NoteProperties***: generic properties.
-    - ***properties***: >> Things I have, Things that describe me (e.g. my skin color, my eyes color, etc...)
+- ***MemberType***:
+  - ***method***: Things I can do.
+  - ***NoteProperties***: generic properties.
+  - ***properties***: >> Things I have, Things that describe me (e.g. my skin color, my eyes color, etc...)
 
 - **Exmples**:
 
