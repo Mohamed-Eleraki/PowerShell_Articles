@@ -164,7 +164,7 @@ Downloads                      152.86       0.15         /home/PowerShellUser/Do
 
 ```bash
 # Filtter the out-put with sizeGB that match "0.anySize"
-Get-FolderSize | Where-Object SizeGB -match "0.1*"
+Get-FolderSize | Where-Object SizeGB -match "0.*"
 
 FolderName                     SizeMB       SizeGB       FullPath
 ----------                     ------       ------       --------
