@@ -190,7 +190,7 @@ Get-FolderSize | Format-Table -AutoSize
 ```
 
 ```bash
-# specify a path
+# Get a specific path info with -Basepath
 Get-FolderSize -BasePath 'C:\Program Files'
 ```
 
