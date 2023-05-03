@@ -60,6 +60,18 @@ A module is a package that contains PowerShell members, such as [cmdlets](https:
  Install-Module -Name PSFolderSize 
  ```
 
+***Print-out the installed modules:***
+
+```Get-InstalledModule```
+
+***The Out-put should be like:***
+
+```bash
+Version              Name                                Repository           Description
+-------              ----                                ----------           -----------
+1.7.1                PSFolderSize                        PSGallery            This module enables you to gather folder size information, and…
+```
+
 ```bash
 get-help Get-FolderSize
 ```
