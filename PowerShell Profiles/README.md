@@ -1,4 +1,4 @@
-# PowerShell Profile
+# PowerShell Profiles
 
 
 ## Problems solved:
