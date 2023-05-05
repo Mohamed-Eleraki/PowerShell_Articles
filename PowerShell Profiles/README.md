@@ -1,1 +1,3 @@
-https://github.com/Mohamed-Eleraki/PowerShell_Articles/tree/main/PsFoldersize
+#PowerShell Profile
+
+ou can create a PowerShell profile to customize your environment, You can add commands, aliases, functions, variables, modules, PowerShell drives and more. You can also add other session-specific elements to your profile so they're available in every session without having to import or re-create them. A PowerShell profile is a script that runs when PowerShell starts. You can have multiple profiles per user ####################
