@@ -1,7 +1,7 @@
 # PowerShell Profiles
 
-
-## Problems solved:
+<details>
+<summary><b>Problems solved</b></summary>
 
   - **Senario 01:** You are usnig PowerShell to create bunch of AD users from excel sheet, Using script like the below:
 
@@ -21,8 +21,7 @@
 
   - **Senario 02:** You have multiple scripts in your environment, and you have some variables and functinos that you're using continuously in each script, So you're defining in each script the same variables and functions, etc. in short period you'll find out that your script become more complix; To make the script simple in as posible you can define all those variables and function in PowerShell profile and just recall it in your script.
 
+</details>
 
 
-You can create a PowerShell profile to customize your environment, You can add commands, aliases, functions, variables, modules, PowerShell drives and more. You can also add other session-specific elements to your profile so they're available in every session without having to import or re-create them. A PowerShell profile is a script that runs when PowerShell starts. You can have multiple profiles per user ####################
-
-the host for powershell host not the machine if you want to navigating on machins with the same profile use onedrive.
+You can create a PowerShell profile to customize your environment, You can add commands, aliases, functions, variables, modules, PowerShell drives and more. You can also add other session-specific elements to your profile so they're available in every session without having to import or re-create them. A PowerShell profile is a script that runs when PowerShell starts. You can have multiple profiles per user or host, The Host here is for powershell itself not for the machine, and if you want to navigating on machines with the same profile you can use onedrive instead.
