@@ -33,7 +33,6 @@ You can create a PowerShell profile to customize your environment, You can add c
   ```bash  
     PS /home/mohamed> $PROFILE.CurrentUserCurrentHost
     /home/mohamed/.config/powershell/Microsoft.PowerShell_profile.ps1
-    
   ```
   
 
@@ -58,4 +57,4 @@ You can create a PowerShell profile to customize your environment, You can add c
   ```
   
 
-Here I'm using PowerShell core on Linux, you can use PS on WIN as well, however if you want to install the PowerShell Liunx version follow the steps here: [Install PowerShell core](https://github.com/Mohamed-Eleraki/PowerShell_Articles/tree/main/PsFoldersize#install-powershell-core)
+*Here I'm using PowerShell core on Linux, you can use PS on WIN as well, however if you want to install the PowerShell Liunx version follow the steps here: [Install PowerShell core](https://github.com/Mohamed-Eleraki/PowerShell_Articles/tree/main/PsFoldersize#install-powershell-core)*
