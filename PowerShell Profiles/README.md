@@ -86,6 +86,14 @@ To view all the current properties of $profile, use the following command:
   CurrentUserAllHosts    NoteProperty string CurrentUserAllHosts=/home/mohamed/.config/powershell/profile.ps1
   CurrentUserCurrentHost NoteProperty string CurrentUserCurrentHost=/home/mohamed/.config/powershell/Microsoft.PowerShell_profile.ps1
 ```
+As viewed The ```$PROFILE``` Variable have load of Properties, however the ```$profile``` variable value is your CurrentUserCurrentHost.
+```bash
+PS /home/mohamed> $PROFILE      
+/home/mohamed/.config/powershell/Microsoft.PowerShell_profile.ps1
+PS /home/mohamed> $PROFILE.CurrentUserCurrentHost
+/home/mohamed/.config/powershell/Microsoft.PowerShell_profile.ps1
+```
+
 To view all the current Members, use the following command:
 
 ```bash
@@ -107,4 +115,13 @@ To view all the current Members, use the following command:
 
 ```
 
-*To understand the ```get-memeber`, follow this article, command descovery section: [Command discovery](https://github.com/Mohamed-Eleraki/PowerShell_Articles/tree/main/PsFoldersize#psfoldersize-module-1)*
+*To understand the ```get-memeber`, follow this article, **Command discovery** section: [Command discovery](https://github.com/Mohamed-Eleraki/PowerShell_Articles/tree/main/PsFoldersize#psfoldersize-module-1)*
+
+
+## Edit Profile
+
+You can edit you profile using the following command:
+
+```bash
+
+```
