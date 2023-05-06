@@ -174,7 +174,7 @@ Save, Exit, and restart the PowerShell terminal; Let's try-out The Function by e
 ```
 
 
-# References:
+## References:
 
 - [About Profiles](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_profiles?view=powershell-7.3)
 
