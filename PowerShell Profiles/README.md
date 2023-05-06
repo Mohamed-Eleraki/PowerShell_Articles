@@ -57,7 +57,7 @@ You can create a PowerShell profile to customize your environment, You can add c
   ```
   
 
-*In this lab I'm using PowerShell core on Linux, you can use PS on WIN as well, however if you want to install the PowerShell Liunx version follow this article: [Install PowerShell core](https://github.com/Mohamed-Eleraki/PowerShell_Articles/tree/main/PsFoldersize#install-powershell-core)*
+*In this lab I'm using PowerShell core on Linux, you can use PS on WIN as well, however if you want to install the PowerShell Linux version follow this article: [Install PowerShell core](https://github.com/Mohamed-Eleraki/PowerShell_Articles/tree/main/PsFoldersize#install-powershell-core)*
 
 These Paths are stored under there main Directory "/home/user" and "/opt/microsoft/powershell/7"  you can call them using the variables as well:
 
