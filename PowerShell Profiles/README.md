@@ -73,7 +73,7 @@ These Paths are stored under there main Directory "/home/user" and "/opt/microso
 
 The CurrentUserCurrentHost ```$PROFILE.CurrentUserCurrentHost``` is known as your powershell profile.
 
-To view all the current properties of $profile, use the following command:
+To view all the current properties of ```$profile```, use the following command:
 ```bash
   PS /home/mohamed> $PROFILE | Get-Member -Type NoteProperty | ft -AutoSize
 
