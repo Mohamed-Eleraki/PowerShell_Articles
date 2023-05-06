@@ -58,3 +58,15 @@ You can create a PowerShell profile to customize your environment, You can add c
   
 
 *Here I'm using PowerShell core on Linux, you can use PS on WIN as well, however if you want to install the PowerShell Liunx version follow the steps here: [Install PowerShell core](https://github.com/Mohamed-Eleraki/PowerShell_Articles/tree/main/PsFoldersize#install-powershell-core)*
+
+These Paths are stored under there main Directory "/home/user" and "/opt/microsoft/powershell/7"  you can call them using the variables as well:
+
+```bash
+  PS /home/mohamed> $home                    
+  /home/mohamed
+```
+
+```bash
+  PS /home/mohamed> $PSHOME                     
+  /opt/microsoft/powershell/7
+```
