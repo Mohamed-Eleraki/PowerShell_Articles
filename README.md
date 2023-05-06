@@ -8,3 +8,5 @@ The **PowerShell_Articles** is a set  of hands-on PowerShell (Commands, Modules,
 # Sections
 
 - [PsFoldersize](https://github.com/Mohamed-Eleraki/PowerShell_Articles/tree/main/PsFoldersize)
+
+- [PowerShell Profiles](https://github.com/Mohamed-Eleraki/PowerShell_Articles/tree/main/PowerShell%20Profiles)
