@@ -57,7 +57,7 @@ You can create a PowerShell profile to customize your environment, You can add c
   ```
   
 
-*Here I'm using PowerShell core on Linux, you can use PS on WIN as well, however if you want to install the PowerShell Liunx version follow the steps here: [Install PowerShell core](https://github.com/Mohamed-Eleraki/PowerShell_Articles/tree/main/PsFoldersize#install-powershell-core)*
+*Here I'm using PowerShell core on Linux, you can use PS on WIN as well, however if you want to install the PowerShell Liunx version follow this article: [Install PowerShell core](https://github.com/Mohamed-Eleraki/PowerShell_Articles/tree/main/PsFoldersize#install-powershell-core)*
 
 These Paths are stored under there main Directory "/home/user" and "/opt/microsoft/powershell/7"  you can call them using the variables as well:
 
@@ -69,4 +69,20 @@ These Paths are stored under there main Directory "/home/user" and "/opt/microso
 ```bash
   PS /home/mohamed> $PSHOME                     
   /opt/microsoft/powershell/7
+```
+
+The CurrentUserCurrentHost ```$PROFILE.CurrentUserCurrentHost``` is known as your powershell profile.
+
+To view all the current properties of $profile, use the following command:
+```bash
+  PS /home/mohamed> $PROFILE | Get-Member -Type NoteProperty | ft -AutoSize
+
+     TypeName: System.String
+
+  Name                   MemberType   Definition
+  ----                   ----------   ----------
+  AllUsersAllHosts       NoteProperty string AllUsersAllHosts=/opt/microsoft/powershell/7/profile.ps1
+  AllUsersCurrentHost    NoteProperty string AllUsersCurrentHost=/opt/microsoft/powershell/7/Microsoft.PowerShell_profile.ps1
+  CurrentUserAllHosts    NoteProperty string CurrentUserAllHosts=/home/mohamed/.config/powershell/profile.ps1
+  CurrentUserCurrentHost NoteProperty string CurrentUserCurrentHost=/home/mohamed/.config/powershell/Microsoft.PowerShell_profile.ps1
 ```
