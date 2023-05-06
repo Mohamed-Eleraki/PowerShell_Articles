@@ -31,43 +31,43 @@ You can create a PowerShell profile to customize your environment, You can add c
   </p>
 
   ```bash  
-    PS /home/mohamed> $PROFILE.CurrentUserCurrentHost
-    /home/mohamed/.config/powershell/Microsoft.PowerShell_profile.ps1
+    PS /home/Ps_user> $PROFILE.CurrentUserCurrentHost
+    /home/Ps_user/.config/powershell/Microsoft.PowerShell_profile.ps1
   ```
   
 
   
   ```bash  
-    PS /home/mohamed> $PROFILE.CurrentUserAllHosts   
-    /home/mohamed/.config/powershell/profile.ps1
+    PS /home/Ps_user> $PROFILE.CurrentUserAllHosts   
+    /home/Ps_user/.config/powershell/profile.ps1
   ```
   
 
   
   ```bash  
-    PS /home/mohamed> $PROFILE.AllUsersCurrentHost                                  
+    PS /home/Ps_user> $PROFILE.AllUsersCurrentHost                                  
     /opt/microsoft/powershell/7/Microsoft.PowerShell_profile.ps1
   ```
  
 
   
   ```bash  
-    PS /home/mohamed> $PROFILE.AllUsersAllHosts   
+    PS /home/Ps_user> $PROFILE.AllUsersAllHosts   
     /opt/microsoft/powershell/7/profile.ps1
   ```
   
 
-*In this lab I'm using PowerShell core on Linux, you can use PS on WIN as well, however if you want to install the PowerShell Linux version follow this article: [Install PowerShell core](https://github.com/Mohamed-Eleraki/PowerShell_Articles/tree/main/PsFoldersize#install-powershell-core)*
+*In this lab I'm using PowerShell core on Linux, you can use PS on WIN as well, however if you want to install the PowerShell Linux version follow this article: [Install PowerShell core](https://github.com/Ps_user-Eleraki/PowerShell_Articles/tree/main/PsFoldersize#install-powershell-core)*
 
 These Paths are stored under there main Directory "/home/user" and "/opt/microsoft/powershell/7"  you can call them using the variables as well:
 
 ```bash
-  PS /home/mohamed> $home                    
-  /home/mohamed
+  PS /home/Ps_user> $home                    
+  /home/Ps_user
 ```
 
 ```bash
-  PS /home/mohamed> $PSHOME                     
+  PS /home/Ps_user> $PSHOME                     
   /opt/microsoft/powershell/7
 ```
 
@@ -75,7 +75,7 @@ The CurrentUserCurrentHost ```$PROFILE.CurrentUserCurrentHost``` is known as you
 
 To view all the current properties of ```$profile```, use the following command:
 ```bash
-  PS /home/mohamed> $PROFILE | Get-Member -Type NoteProperty | ft -AutoSize
+  PS /home/Ps_user> $PROFILE | Get-Member -Type NoteProperty | ft -AutoSize
 
      TypeName: System.String
 
@@ -83,21 +83,21 @@ To view all the current properties of ```$profile```, use the following command:
   ----                   ----------   ----------
   AllUsersAllHosts       NoteProperty string AllUsersAllHosts=/opt/microsoft/powershell/7/profile.ps1
   AllUsersCurrentHost    NoteProperty string AllUsersCurrentHost=/opt/microsoft/powershell/7/Microsoft.PowerShell_profile.ps1
-  CurrentUserAllHosts    NoteProperty string CurrentUserAllHosts=/home/mohamed/.config/powershell/profile.ps1
-  CurrentUserCurrentHost NoteProperty string CurrentUserCurrentHost=/home/mohamed/.config/powershell/Microsoft.PowerShell_profile.ps1
+  CurrentUserAllHosts    NoteProperty string CurrentUserAllHosts=/home/Ps_user/.config/powershell/profile.ps1
+  CurrentUserCurrentHost NoteProperty string CurrentUserCurrentHost=/home/Ps_user/.config/powershell/Microsoft.PowerShell_profile.ps1
 ```
 As viewed The ```$PROFILE``` Variable have load of Properties, however the ```$profile``` variable value is your CurrentUserCurrentHost.
 ```bash
-PS /home/mohamed> $PROFILE      
-/home/mohamed/.config/powershell/Microsoft.PowerShell_profile.ps1
-PS /home/mohamed> $PROFILE.CurrentUserCurrentHost
-/home/mohamed/.config/powershell/Microsoft.PowerShell_profile.ps1
+PS /home/Ps_user> $PROFILE      
+/home/Ps_user/.config/powershell/Microsoft.PowerShell_profile.ps1
+PS /home/Ps_user> $PROFILE.CurrentUserCurrentHost
+/home/Ps_user/.config/powershell/Microsoft.PowerShell_profile.ps1
 ```
 
 To view all the current Members, use the following command:
 
 ```bash
-  PS /home/mohamed> $PROFILE | gm | ft -AutoSize                           
+  PS /home/Ps_user> $PROFILE | gm | ft -AutoSize                           
 
      TypeName: System.String
 
@@ -115,7 +115,7 @@ To view all the current Members, use the following command:
 
 ```
 
-*To understand the ```get-memeber```, follow this article, **Command discovery** section: [Command discovery](https://github.com/Mohamed-Eleraki/PowerShell_Articles/tree/main/PsFoldersize#psfoldersize-module-1)*
+*To understand the ```get-memeber```, follow this article, **Command discovery** section: [Command discovery](https://github.com/Ps_user-Eleraki/PowerShell_Articles/tree/main/PsFoldersize#psfoldersize-module-1)*
 
 
 ## Edit Profile
@@ -124,21 +124,21 @@ To view all the current Members, use the following command:
 To ensure the profile path exist entering this:
 
 ```bash
-  PS /home/mohamed> Test-Path -path $PROFILE
+  PS /home/Ps_user> Test-Path -path $PROFILE
   False
-  PS /home/mohamed> Test-Path -path $PROFILE.AllUsersAllHosts
+  PS /home/Ps_user> Test-Path -path $PROFILE.AllUsersAllHosts
   False
 ```
 The value is False duo to we didn't create the profiles yet, to creat **PowerShell Profile** without overwriting an existing profile, use the following:
 
 ```bash
-  PS /home/mohamed> if(!(Test-Path -Path $PROFILE)) {New-Item -Type File -path $PROFILE -Force}
+  PS /home/Ps_user> if(!(Test-Path -Path $PROFILE)) {New-Item -Type File -path $PROFILE -Force}
 
-      Directory: /home/mohamed/.config/powershell
+      Directory: /home/Ps_user/.config/powershell
 
   UnixMode   User             Group                 LastWriteTime           Size Name
   --------   ----             -----                 -------------           ---- ----
-  -rw-rw-r-- mohamed          mohamed              5/6/2023 10:53              0 Microsoft.PowerShell_profile.ps1
+  -rw-rw-r-- Ps_user          Ps_user              5/6/2023 10:53              0 Microsoft.PowerShell_profile.ps1
 ```
 
 Let's edit your profile using the following command:
@@ -169,6 +169,6 @@ Let's type ```Receive-output``` Function:
 Save, Exit, and restart the PowerShell terminal; Let's try-out The Function by entering the following:
 
 ```bash
-  PS /home/mohamed> Write-Output "Mohamed" | Receive-output
-  Value = Mohamed
+  PS /home/Ps_user> Write-Output "Ps_user" | Receive-output
+  Value = Ps_user
 ```
