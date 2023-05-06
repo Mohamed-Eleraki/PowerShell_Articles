@@ -86,3 +86,23 @@ To view all the current properties of $profile, use the following command:
   CurrentUserAllHosts    NoteProperty string CurrentUserAllHosts=/home/mohamed/.config/powershell/profile.ps1
   CurrentUserCurrentHost NoteProperty string CurrentUserCurrentHost=/home/mohamed/.config/powershell/Microsoft.PowerShell_profile.ps1
 ```
+To view all the current Members, use the following command:
+
+```bash
+  PS /home/mohamed> $PROFILE | gm | ft -AutoSize                           
+
+     TypeName: System.String
+
+  Name                   MemberType            Definition
+  ----                   ----------            ----------
+  Clone                  Method                System.Object Clone(), System.Object ICloneable.Clone()
+  CompareTo              Method                int CompareTo(System.Object value), int CompareTo(string strB), int IComparable.CompareTo(Syste…
+  Contains               Method                bool Contains(string value), bool Contains(string value, System.StringComparison comparisonType…
+  CopyTo                 Method                void CopyTo(int sourceIndex, char[] destination, int destinationIndex, int count), void CopyTo(…
+  EndsWith               Method                bool EndsWith(string value), bool EndsWith(string value, System.StringComparison comparisonType…
+  EnumerateRunes         Method                System.Text.StringRuneEnumerator EnumerateRunes()
+  .
+  .
+  .
+
+```
