@@ -16,9 +16,9 @@
 
   ```
   
-  Each time you'll go and open-up your script and edit the ```import-csv``` path to refer to the new excel sheet you want to woke on. These steps are a little overwhelming. Instead you can define this script as a function in powershell profile and parameterize the ```import-csv``` path, So each time to create bunch of users just open the PowerSell terminal and type the name of function and send the new path of your excel sheet as an option!!
+  Each time you'll go and open-up your script and edit the ```import-csv``` path to refer to the new excel sheet you want to woke on. These steps are a little overwhelming. Instead you can define this script as a function in powershell profile and parameterize the ```import-csv``` path, So each time to create bunch of users just open the PowerSell terminal and type the name of function and send the new path of your excel sheet as an option, Traa!!
 
-- **Senario 02:** You have multiple scripts in your environment, and you have some variables and functinos that you're using continuously in each script, So you're defining in each script the same variables and functions, etc. in short period you'll find out that your script become more complix; To make the script simple in as posible you can define all those variables and function in PowerShell profile and just recall it in your script.
+- **Senario 02:** You have multiple scripts in your environment, and you have some variables and functinos that you're using continuously in each script, So you're defining in each scripts the same variables and functions, etc. in short period you'll find out that your script become more complix; To make the script simple in as posible you can define all those variables and function in PowerShell profile and just recall them in your script.
 
 </details>
 
@@ -57,7 +57,7 @@ You can create a PowerShell profile to customize your environment, You can add c
   ```
   
 
-*Here I'm using PowerShell core on Linux, you can use PS on WIN as well, however if you want to install the PowerShell Liunx version follow this article: [Install PowerShell core](https://github.com/Mohamed-Eleraki/PowerShell_Articles/tree/main/PsFoldersize#install-powershell-core)*
+*In this lab I'm using PowerShell core on Linux, you can use PS on WIN as well, however if you want to install the PowerShell Liunx version follow this article: [Install PowerShell core](https://github.com/Mohamed-Eleraki/PowerShell_Articles/tree/main/PsFoldersize#install-powershell-core)*
 
 These Paths are stored under there main Directory "/home/user" and "/opt/microsoft/powershell/7"  you can call them using the variables as well:
 
