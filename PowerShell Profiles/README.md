@@ -25,3 +25,9 @@
 
 
 You can create a PowerShell profile to customize your environment, You can add commands, aliases, functions, variables, modules, PowerShell drives and more. You can also add other session-specific elements to your profile so they're available in every session without having to import or re-create them. A PowerShell profile is a script that runs when PowerShell starts. You can have multiple profiles per user or host, The Host here is for powershell itself not for the machine, and if you want to navigating on machines with the same profile you can use onedrive instead.
+
+<p>
+These PowerShell Profiles are stored as files. You can have several
+profile files, and you can even have profiles that are specific to a
+particular host.
+</p>
