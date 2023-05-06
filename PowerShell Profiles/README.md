@@ -172,3 +172,10 @@ Save, Exit, and restart the PowerShell terminal; Let's try-out The Function by e
   PS /home/Ps_user> Write-Output "Ps_user" | Receive-output
   Value = Ps_user
 ```
+
+
+# References:
+
+- [About Profiles](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_profiles?view=powershell-7.3)
+
+- [Mastering Windows Server 2016](https://www.amazon.com/Mastering-Windows-Server-Brian-Svidergol/dp/1119404975/ref=sr_1_1?crid=1410D3AZEKH9O&keywords=mastering+windows+server+2016&qid=1683395968&sprefix=Mastering+Windows+Server%2Caps%2C258&sr=8-1)
