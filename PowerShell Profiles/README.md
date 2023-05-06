@@ -106,3 +106,5 @@ To view all the current Members, use the following command:
   .
 
 ```
+
+*To understand the ```get-memeber`, follow this article, command descovery section: [Command discovery](https://github.com/Mohamed-Eleraki/PowerShell_Articles/tree/main/PsFoldersize#psfoldersize-module-1)*
