@@ -34,26 +34,26 @@ You can create a PowerShell profile to customize your environment, You can add c
     PS /home/mohamed> $PROFILE.CurrentUserCurrentHost
     /home/mohamed/.config/powershell/Microsoft.PowerShell_profile.ps1
     
-    ```
+  ```
   
 
   
-    ```bash  
+  ```bash  
     PS /home/mohamed> $PROFILE.CurrentUserAllHosts   
     /home/mohamed/.config/powershell/profile.ps1
-    ```
+  ```
   
 
   
-    ```bash  
+  ```bash  
     PS /home/mohamed> $PROFILE.AllUsersCurrentHost                                  
     /opt/microsoft/powershell/7/Microsoft.PowerShell_profile.ps1
-    ```
+  ```
  
 
   
-    ```bash  
+  ```bash  
     PS /home/mohamed> $PROFILE.AllUsersAllHosts   
     /opt/microsoft/powershell/7/profile.ps1
-    ```
+  ```
   
