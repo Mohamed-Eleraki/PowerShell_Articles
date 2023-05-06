@@ -120,19 +120,8 @@ To view all the current Members, use the following command:
 
 ## Edit Profile
 
-You can edit you profile using the following command:
 
-```bash
-  nano $PROFILE
-```
-
-If you're using Windows use the following command:
-
-```bash
-  notepad $PROFILE
-```
-
-You can also test to ensure the profile path exist by entering this:
+To ensure the profile path exist entering this:
 
 ```bash
   PS /home/mohamed> Test-Path -path $PROFILE
@@ -152,3 +141,34 @@ The value is False duo to we didn't create the profiles yet, to creat **PowerShe
   -rw-rw-r-- mohamed          mohamed              5/6/2023 10:53              0 Microsoft.PowerShell_profile.ps1
 ```
 
+Let's edit your profile using the following command:
+
+```bash
+  nano $PROFILE
+```
+
+If you're using Windows use the following command:
+
+```bash
+  notepad $PROFILE
+```
+
+Let's type ```Receive-output``` Function:
+
+```bash
+  function receive-output
+  {
+  process {
+                  write-host "Value = " -nonewline
+                  write-host $_ -ForegroundColor Red -backgroundcolor yellow
+          }
+  }
+```
+*This function will print-out the value you're passing to.*
+
+Save, Exit, and restart the PowerShell terminal; Let's try-out The function by entering the following:
+
+```bash
+  PS /home/mohamed> Write-Output "Mohamed" | Receive-output
+  Value = Mohamed
+```
