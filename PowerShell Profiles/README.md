@@ -123,5 +123,32 @@ To view all the current Members, use the following command:
 You can edit you profile using the following command:
 
 ```bash
-
+  nano $PROFILE
 ```
+
+If you're using Windows use the following command:
+
+```bash
+  notepad $PROFILE
+```
+
+You can also test to ensure the profile path exist by entering this:
+
+```bash
+  PS /home/mohamed> Test-Path -path $PROFILE
+  False
+  PS /home/mohamed> Test-Path -path $PROFILE.AllUsersAllHosts
+  False
+```
+The value is False duo to we didn't create the profiles yet, to creat **PowerShell Profile** without overwriting an existing profile, use the following:
+
+```bash
+  PS /home/mohamed> if(!(Test-Path -Path $PROFILE)) {New-Item -Type File -path $PROFILE -Force}
+
+      Directory: /home/mohamed/.config/powershell
+
+  UnixMode   User             Group                 LastWriteTime           Size Name
+  --------   ----             -----                 -------------           ---- ----
+  -rw-rw-r-- mohamed          mohamed              5/6/2023 10:53              0 Microsoft.PowerShell_profile.ps1
+```
+
