@@ -166,7 +166,7 @@ Let's type ```Receive-output``` Function:
 ```
 *This function will print-out the value you're passing to.*
 
-Save, Exit, and restart the PowerShell terminal; Let's try-out The function by entering the following:
+Save, Exit, and restart the PowerShell terminal; Let's try-out The Function by entering the following:
 
 ```bash
   PS /home/mohamed> Write-Output "Mohamed" | Receive-output
